@@ -1,4 +1,37 @@
 Analyze this image for a content moderation system.
-1. Provide a concise visual summary (what is happening?).
+1. Provide a detailed visual summary (what is happening? Try to capture as much symantic information as possible).
 2. Extract ALL text visible in the image exactly as written (OCR).
+
+CRITICAL INSTRUCTION: You MUST return the result in valid JSON format with exactly these keys:
+        - "visual_summary": [Your description]
+        - "ocr_text": [Extracted text]
+        - "is_sarcastic": [True/False]
+        - "is_sarcastic_reason": [Reason for why it is sarcastic]
+        - "is_harmful": [True/False]
+        - "is_harmful_reason": [Reason for why it is harmful]    
+        - "is_offensive": [True/False]
+        - "is_offensive_reason": [Reason for why it is offensive]
+        - "is_violent": [True/False]
+        - "is_violent_reason": [Reason for why it is violent]
+        - "is_sexual": [True/False]
+        - "is_sexual_reason": [Reason for why it is sexual]
+        - "is_explicit": [True/False]
+        - "is_explicit_reason": [Reason for why it is explicit]
+        - "is_terrorist": [True/False]
+        - "is_terrorist_reason": [Reason for why it is terrorist]
+        - "is_extremist": [True/False]
+        - "is_extremist_reason": [Reason for why it is extremist]
+        - "is_child_exploitation": [True/False]
+        - "is_child_exploitation_reason": [Reason for why it is child exploitation]
+        - "is_hate_speech": [True/False]
+        - "is_hate_speech_reason": [Reason for why it is hate speech]
+        - "is_spam": [True/False]
+        - "is_spam_reason": [Reason for why it is spam]
+        - "is_racist_or_racial_slur": [True/False]
+        - "is_racist_or_racial_slur_reason": [Reason for why it is racist or racial slur]
+        - "is_there_nudity": [True/False]
+        - "is_there_nudity_reason": [Reason for why the conclusion is that it has nudity]
+GUIDANCE for Decision Making:
+Keep a very low threshold for qualifications of above fields. If there is a slight chance that it qualifies 
+for any of the above fields, then mark it as true. Remember to be extra strict if the content is sarcastic.
 

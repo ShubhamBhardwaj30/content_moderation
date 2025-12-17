@@ -50,6 +50,6 @@ Post 46971: Action=DISPLAY (Score=0.9142)
 ```
 
 ## Key Files
-- [main.py](file:///Users/shubhambhardwaj/Shubham/datascience/study/LLM/embeddings/research/harmful_meme/main.py): Entry point (Refactored).
-- [feature_factory.py](file:///Users/shubhambhardwaj/Shubham/datascience/study/LLM/embeddings/research/harmful_meme/feature_factory.py): Contains the logic for the VLM/Transformer fusion.
-- [feature_store.py](file:///Users/shubhambhardwaj/Shubham/datascience/study/LLM/embeddings/research/harmful_meme/feature_store.py): Handles Offline/Online storage.
+- [main.py](main.py): Entry point (Refactored).
+- [feature_factory.py](feature_factory.py): Contains the logic for the VLM/Transformer fusion.
+- [feature_store.py](feature_store.py): Handles Offline/Online storage.

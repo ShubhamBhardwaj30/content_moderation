@@ -1,0 +1,9 @@
+Analyze the following content from a social media post.
+Post Text: {post_text}
+Image Description: {visual_summary}
+Text in Image (OCR): {ocr_text}
+
+Task:
+1. Identify if there are any threatening or harmful keywords.
+2. Provide a comma-separated list of 5-10 keywords that capture the core meaning and sentiment of the post for a content moderation system.
+3. Return ONLY the comma-separated list of keywords. Do not add any conversational text.

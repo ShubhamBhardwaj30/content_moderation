@@ -2,8 +2,4 @@ pandas
 numpy
 scikit-learn
 pillow  # Image Processing
-transformers # Offline VLM
-torch        # Offline VLM
-accelerate   # Optimization
-bitsandbytes # Quantization
 requests     # Ollama API
