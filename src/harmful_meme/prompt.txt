@@ -1,0 +1,4 @@
+Analyze this image for a content moderation system.
+1. Provide a concise visual summary (what is happening?).
+2. Extract ALL text visible in the image exactly as written (OCR).
+
